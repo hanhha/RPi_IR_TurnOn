@@ -7,12 +7,16 @@ I'd just wanted a simple solution to turn on my RPi which was running Kodi with 
 
 A dedicated button (I used switching source button in my case) of TV remote (which normally uses NEC Infrrared Transmission Protocol) was used for turn on the RPi. By this way, interference between the board and other devices is avoided.
  
-## Requirements:
+## Prerequisites:
 - Attiny13A.
 - IR receiver (3 pin).
 - Some resistors.
 - AVR programmer (to flash code to Attiny13A, or you can use RPi directly, see [here](https://learn.adafruit.com/program-an-avr-or-arduino-using-raspberry-pi-gpio-pins/overview).
 - Desired remote (should be a popular, simple remote - not a thing such as a remote keyboard - usually this kind of remote will produce complex code).
+- A veroboard and some handi skills (at the end, breadboard could not be use for real application, and custom PCB was not economical).
+
+## Schematic:
+![Schmatic](schematic.png)
 
 ## Install
 - Compile the code to hex file.
